@@ -17,8 +17,6 @@ useEffect(() => {
 axios.get(`${peopleUrl}`)
 .then((response) => {
   setCharacters(response.data);
-  console.log(response.data[0].name);
-  console.log(response.data[0].birth_year);
 })
 .catch((error) => {
   console.log(error); 
