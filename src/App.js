@@ -3,6 +3,8 @@ import {useState, useEffect } from 'react';
 import ReactDOM from 'react-dom'; 
 import axios from 'axios';
 import './App.css';
+import Character from './components/Character'
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -22,11 +24,14 @@ axios.get(`${peopleUrl}`)
   console.log(error); 
 })
 }, [])
+
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <Character  userData={characters}/>
     </div>
   );
+  
 }
 
 export default App;
