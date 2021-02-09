@@ -6,3 +6,11 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.flex-container{
+  display: flex; 
+}
+.parent-div{
+  margin-right: 25%; 
+  margin-left: 25%; 
+  width: 50%; 
+}
